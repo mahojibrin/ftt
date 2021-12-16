@@ -1,246 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
 
-<html lang="en">
+    margin: 0;
 
-<head>
-
-	<meta charset="UTF-8">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Favicon link -->
-
-	<link rel="icon" type="image/x-icon" href="https://nilec191103004.w3spaces.com/Favicon.png">
-
-	<!-- Bootstrap link -->
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-	<!-- Font awesome link -->
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-	<!-- Css link -->
-
-	<link rel="stylesheet" href="styles.css">
-
-	
-
-	<title>FOOTKICKS</title>
-
-
-    <body>
-        <!-- NAVIAGATION -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">FOOTKICKS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span> <i  id ="bar" class="fas fa-bars"></i> ></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="men.html">MEN</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="women.html">WOMEN</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">BRANDS</a>
-                  
-                  
-              </div>
-            </div>
-          </nav>
-
-          <section id="home">
-              <div class="container">
-            
-                
-                <h1> FOOTKICKS</h1>
-                <button> Shop NOW</button>
-
-              </div>
-
-
-
-          </section>
-            
- 
-
-          <section id="brand" class="container">
-            <div class= "row m-0 py-5">
-                <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/logo 55.jpeg" alt="">
-                <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/logo 2.png" alt="">
-                <img class ="img-fluid col-lg-2 col-md-4 col-6" src="logo 3.jpeg" alt="">
-                <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/logo 1.png" alt="">
-                <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/Balenciaga logo.png" alt="">
-
-            </div>
-
-          </section>
-          
-          <section id=" featured" class=" my-5 pb-5">
-              <div class="container text-center mt-5 py-5">
-                  <h3> PRODUCTS</h3>
-                  <hr>
-                  <p> Here are the new men shoes</p>
-              </div>
-
-              <section id="goods" class="container">
-                <div class= " items row m-0  py-4">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/NIKE AIR MAX 0.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/adidas originals nite Jogger.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src=" IMAGES/Off white WHITE Mid Top.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/balenciaga Black Speed Sock Sneakers.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/NIKE BLAZZER.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/philipp plein White Predator Lace up Sneakers.jpeg" alt="">
+    padding: 0;
     
-                </div>
-                  
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+body
+{
+    font-family:'Poppins', sans-serif ;
+
+}
+
+h1
+{
+    font-size: 2.5rem;
+    font-weight:700;
+    color:white;
+}
+
+h2
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3
+{
+    font-size: 1.4rem;
+    font-weight : 800;
+}
+h4
+{
+    font-size: 1.1rem;
+    font-weight : 800;
+
+}
+h5
+{
+    font-size: 1rem;
+    font-weight : 400;
+    Color: #1d1d1d
+
+}
+h6
+{
+    color: #d8d8d8
+
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color : aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3 ease;
+}
+button:hover{
+    background-color: #3a3a3a;
+
+}
+.main-container{
+
+    height: 1300vh;
+
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left : 0;
+}
+
+
+.navbar-logo img
+{
+
+    margin: 22.9px 119px;
+
+    height: 40.5px;
+
+    z-index: 90;
+
+}
+
+.navbar-bars
+
+{
+
+    margin-top: 10px;
+
+    margin-right: 70px;
+
+}
+.nav.light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.nav.light .navbar-nav .nav-link:hover,
+.nav i :hover,
+.nav.light .navbar-nav .nav-link:hover.active,
+.navbar i.active {
+    color: blue;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar-light  .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar {
+    font-size: 1.5rem;
+    padding: 0.7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#home {
+    background-image: url("@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+
+    margin: 0;
+
+    padding: 0;
     
-              <div class=" container-fluid">
-              <div  class = "product text-center col-lg-3 col-md-4 col-12 ">
-                <img class = "img-fluid mb-3" src= "IMAGES/NIKE AIR MAX 0.jpeg" alt="">
-                  </div>
-                  <h5 class="p-name"> NIKE AIR JORDAN</h5> 
-                    <button class="buy-btn">SHOP NOW</button>
-              </div>
+    box-sizing: border-box;
 
-              <div  class = "product text- center col-lg-3 col-md-4 col-12s">
-                <img class = "img-fluid mb-3" src= "IMAGES/adidas originals nite Jogger.jpeg" alt="">
-                  </div>
-                  <h5 class="p-name"> ADIDAS ORIGINALS</h5> 
-                    <button type="submit">SHOP NOW</button>
-              </div>
+    scroll-behavior: smooth;
 
-              <div  class = "product text- center col-lg-3 col-md-4 col-12s">
-                <img class = "img-fluid mb-3" src="IMAGES/comme desgarcons play White X Converse Chuck Taylor Heart 1970s .jpeg" alt="">
-                  </div>
-                  <h5 class="p-name"> COMME DESGARCONS</h5> 
-                  <a href="https://www.cettire.com/products/comme-des-garons-play-x-converse-chuck-taylor-heart-1970s-sneakers-95935183?variant=39291371323505&clickref=1101liEf54P3"> <button>SHOP NOW</button></a>
-              </div>
+}
 
-              <div  class = "product text- center col-lg-3 col-md-4 col-12">
-                <img class = "img-fluid mb-3" src="IMAGES/balenciaga Black Speed Sock Sneakers.jpeg" alt="">
-                  </div>
-                  <h5 class="p-name"> BALENCIAGA SNEAKERS</h5> 
-                    <button type="submit">SHOP NOW</button>
-              </div>
-          </section>
+body
+{
+    font-family:'Poppins', sans-serif ;
 
-          <section id="banner">
-                <div class= "container">
-                    <button class ="text-uppercase">Shop</button>
-                </div>
+}
 
+h1
+{
+    font-size: 2.5rem;
+    font-weight:700;
+    color:white;
+}
 
-          </section>
+h2
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3
+{
+    font-size: 1.4rem;
+    font-weight : 800;
+}
+h4
+{
+    font-size: 1.1rem;
+    font-weight : 800;
 
+}
+h5
+{
+    font-size: 1rem;
+    font-weight : 400;
+    Color: #1d1d1d
 
-          <section id=" FEMALE" class=" my-5 pb-2">
-            <div class="container text-center mt-5 py-5">
-                <h3> WOMEN</h3>
-                <hr>
-                <p> Here are the new women shoes</p>
-            </div>
+}
+h6
+{
+    color: #d8d8d8
 
-            <section id="package" class="container">
-                <div class= "row m-0 py-5">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/wshoe1.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/wshoe2.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/wshoe5.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="IMAGES/balenciaga Black Speed Sock Sneakers.jpeg" alt="">
-                    <img class ="img-fluid col-lg-2 col-md-4 col-6" src="wshoe4.jpeg" alt="">
-    
-                </div>
+}
 
-            <div class=" container-fluid">
-            <div  class = "product text- center col-lg-3 col-md-4 col-12s">
-              <img class = "img-fluid mb-3" src= "IMAGES/wshoe1.jpeg" alt="">
-                </div>
-                <h5 class="p-name"> CHLOE</h5> 
-                <form action="https://www.cettire.com/products/chlo-lauren-lace-up-sneakers-99052388" method="get" target="_blank">
-                  <button type="submit">SHOP NOW</button>
-            </div>
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color : aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3 ease;
+}
+button:hover{
+    background-color: #3a3a3a;
 
-            <div class=" container-fluid">
-            <div  class = "product text- center col-lg-3 col-md-4 col-12s">
-              <img class = "img-fluid mb-3" src= "IMAGES/wshoe2.jpeg" alt="">
-                </div>
-                <h5 class="p-name"> DG</h5> 
-                <form action="https://www.cettire.com/products/dolce-gabbana-portofino-sneakers-93016541" method="get" target="_blank">
-                  <button type="submit">SHOP NOW</button>
-            </div>
+}
+.main-container{
 
-            <div class=" container-fluid">
-            <div  class = "product text- center col-lg-3 col-md-4 col-12s">
-              <img class = "img-fluid mb-3" src="wshoe4.jpeg" alt="">
-                </div>
-                <h5 class="p-name"> ALEXANDER MCQUEEN</h5> 
-                <form action=" https://www.cettire.com/products/alexander-mcqueen-tread-slick-sneakers-99817701" method="get" target="_blank">
-                  <button type="submit">SHOP NOW</button>
-            </div>
+    height: 1300vh;
 
-            <div class=" container-fluid">
-            <div  class = "product text- center col-lg-3 col-md-4 col-12">
-              <img class = "img-fluid mb-3" src="IMAGES/wshoe5.jpeg" alt="">
-                </div>
-                <h5 class="p-name"> OFF- WHITE </h5> 
-                <form action="https://www.cettire.com/products/off-white-out-of-office-sneakers-98601647" method="get" target="_blank">
-                  <button type="submit">SHOP NOW</button>
-            </div>
-        </section>
-         
-        <footer class=" mt-5 py-5">
-            <div class ="row container mx-auto pt-5">
-                <h1 class = "pb-2"> FOOTKICKS </h1>
-                <div class=" footer- one col-lg-3 col-md-6 col-12">
-                
-                </div>
-                 
-                <div class=" footer- one col-lg-3 col-md-6 col-12">
-                <h6 class = "pb-2"> FEATURED</h6>
-                <ul class ="text-uppercase list-unstyled">
-                    <li><a href="#">men</a></li>
-                    <li><a href="#">women</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">brands</a></li>
-                
-                </ul>
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left : 0;
+}
 
 
+.navbar-logo img
+{
 
-            </div>
+    margin: 22.9px 119px;
 
-            <div class=" footer- one col-lg-3 col-md-6 col-12">
-                <h6 class = "pb-2"> instagram</h6>
-                <div class="row">
-                 <img class="img-fluid w-25 h-100 m-2" src="IMAGES/comme desgarcons play White X Converse Chuck Taylor Heart 1970s .jpeg" alt="">
-                 <img class="img-fluid w-25 h-100 m-2" src="IMAGES/givenchy White Urban Street Leather .jpeg" alt="">
-                 <img class="img-fluid w-25 h-100 m-2" src="IMAGES/burberry Black Vintage Check Canvas Sneaker.jpeg" alt="">
-                 <img class="img-fluid w-25 h-100 m-2" src="IMAGES/alexander mcqueen black block Chunky.jpeg" alt="">
-                </div>
+    height: 40.5px;
 
-                <div class=" copyright mt-5">
-                    <div class="row container mx-autp">
+    z-index: 90;
 
+}
 
+.navbar-bars
 
-                    </div>
-                </div>
-        </footer>
-         
+{
 
+    margin-top: 10px;
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    </body>
+    margin-right: 70px;
 
+}
+.nav.light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.nav.light .navbar-nav .nav-link:hover,
+.nav i :hover,
+.nav.light .navbar-nav .nav-link:hover.active,
+.navbar i.active {
+    color: blue;
+}
 
-</html>
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar-light  .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar {
+    font-size: 1.5rem;
+    padding: 0.7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#home {
+    background-image: url("IMAGES/GO.png");
+    width : 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span {
+    color : cornflowerblue;
+}
+
+.items{
+    cursor :pointer;
+    margin-bottom: 2rem;
+}
+
+.items img{
+    transition: 0.3s all;
+}
+
+.items:hover img{
+    opacity: 0.7 ;
+}
+
+.product{
+    cursor :pointer;
+    margin-bottom: 2rem;
+}
+
+. productimg{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7 ;
+}
+
+#banner{
+    background-image: url("IMAGES/YES.webp");
+    width : 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: #222222;
+}
+
+);
+    width : 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span {
+    color : cornflowerblue;
+}
+
+.items{
+    cursor :pointer;
+    margin-bottom: 2rem;
+}
+
+.items img{
+    transition: 0.3s all;
+}
+
+.items:hover img{
+    opacity: 0.7 ;
+}
+
+.product{
+    cursor :pointer;
+    margin-bottom: 2rem;
+}
+
+. productimg{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7 ;
+}
+
+#banner{
+    background-image: url("IMAGES/YES.webp");
+    width : 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: #222222;
+}
+
